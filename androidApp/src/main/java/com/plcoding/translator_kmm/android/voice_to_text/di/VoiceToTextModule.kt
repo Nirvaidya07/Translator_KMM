@@ -1,4 +1,4 @@
-package com.plcoding.translator_kmm.android.voice_to_text.data.di
+package com.plcoding.translator_kmm.android.voice_to_text.di
 
 import android.app.Application
 import com.plcoding.translator_kmm.android.voice_to_text.data.AndroidVoiceToTextParser

@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.sp
 import com.plcoding.translator_kmm.Greeting
 
 @Composable
-fun MyApplicationTheme(
+fun TranslatorTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
@@ -61,7 +61,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MyApplicationTheme {
+            TranslatorTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
@@ -81,7 +81,7 @@ fun Greeting(text: String) {
 @Preview
 @Composable
 fun DefaultPreview() {
-    MyApplicationTheme {
+    TranslatorTheme {
         Greeting("Hello, Android!")
     }
 }
