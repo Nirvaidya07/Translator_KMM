@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="error_speach_recognition_unavailable">Speech recognition is not available</string>
+    <string name="close">close</string>
+    <string name="open">Open</string>
+    <string name="swap_languages">Swap Language</string>
 </resources>
