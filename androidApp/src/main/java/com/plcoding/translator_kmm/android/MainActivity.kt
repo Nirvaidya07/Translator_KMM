@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -36,12 +37,47 @@ fun TranslatorTheme(
             secondary = Color(0xFF03DAC5)
         )
     }
+
+    val SfProText = FontFamily(
+        Font(
+            resId = R.font.sf_pro_text_regular,
+            weight = FontWeight.Normal
+        ),
+        Font(
+            resId = R.font.sf_pro_text_medium,
+            weight = FontWeight.Medium
+        ),
+        Font(
+            resId = R.font.sf_pro_text_bold,
+            weight = FontWeight.Bold
+        ),
+    )
     val typography = Typography(
+        h1 = TextStyle(
+            fontFamily = SfProText,
+            fontWeight = FontWeight.Bold,
+            fontSize = 30.sp
+        ),
+        h2 = TextStyle(
+            fontFamily = SfProText,
+            fontWeight = FontWeight.Bold,
+            fontSize = 24.sp
+        ),
+        h3 = TextStyle(
+            fontFamily = SfProText,
+            fontWeight = FontWeight.Medium,
+            fontSize = 18.sp
+        ),
         body1 = TextStyle(
-            fontFamily = FontFamily.Default,
+            fontFamily = SfProText,
             fontWeight = FontWeight.Normal,
-            fontSize = 16.sp
-        )
+            fontSize = 14.sp
+        ),
+        body2 = TextStyle(
+            fontFamily = SfProText,
+            fontWeight = FontWeight.Normal,
+            fontSize = 12.sp
+        ),
     )
     val shapes = Shapes(
         small = RoundedCornerShape(4.dp),
