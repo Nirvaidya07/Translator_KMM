@@ -27,6 +27,7 @@ import com.plcoding.translator_kmm.android.R
 import com.plcoding.translator_kmm.android.core.theme.LightBlue
 import com.plcoding.translator_kmm.core.presentation.UiLanguage
 
+@OptIn(ExperimentalAnimationApi::class)
 @Composable
 fun TranslateTextField(
     fromText: String,
@@ -182,14 +183,14 @@ private fun IdleTranslateTextField(
         if (fromText.isEmpty() && !isFocused) {
             Text(
                 text = stringResource(
-                    id = com.plcoding.translator_kmm.android.R.string.enter_a_text_to_translate
+                    id = R.string.enter_a_text_to_translate
                 ),
                 color = LightBlue
             )
         }
         ProgressButton(
             text = stringResource(
-                id = com.plcoding.translator_kmm.android.R.string.translate
+                id = R.string.translate
             ),
             isLoading = isTranslating,
             onClick = onTranslateClick,
